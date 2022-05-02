@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>규화커피 회원가입 사이트</title>
+    <style>
+        input[type=text]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=password]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=number]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit]{
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        div{
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        label[for]{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">규화커피 회원가입</h1>
+    <form action="/cos_action.java">
+        <title> 이규화 </title>
+        <label for="cos_id">아이디</label><br>
+        <input type="text" id="cos_id" name="cos_id"><br>
+        <label for="cos_id">비밀번호</label><br>
+        <input type="password" id="cos_add" name="cos_add"><br>
+        <label for="cos_name">이름</label><br>
+        <input type="text" maxlength="5" id="cos_name" name="cos_name"><br>
+        <label for="cos_add">주소</label><br>
+        <input type="text" id="cos_add" maxlength="100" name="cos_add"><br>
+        <label for="cos_num">핸드폰 번호</label><br>
+        <input type="number" id="cos_num" name="cos_num" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"><br><br>
+    
+        <input type="submit" onclick="alert('가입이 완료 되었습니다.') " value="회원가입">
+    
+      </form>
+</body>
+</html>

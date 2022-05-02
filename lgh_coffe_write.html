@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>규화 커피 게시판</title>
+    <style>
+        div{
+            padding: 4px;
+            height: 100%;
+            background-color: rgb(217, 241, 241);
+        }
+        input[type=text]{
+            height: 10%;
+            width: 100%;
+        }
+        textarea{
+            height: 400px;
+            width: 100%;    
+            margin: 1px 1px;
+            resize: none;
+            font-size: 30px;
+        }
+        input[type=submit]{
+            width: auto;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: auto;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form>
+        <h1 style="text-align: center;">응원의 글을 남겨주세요.</h1>
+        <input type="text" id="cos_write_logo" name="cos_write_logo"    
+        placeholder="제목을 입력해주세요." onfocus="this.placeholder = ''" onblur="this.placeholder= '제목을 입력해주세요'"></div>
+        <div>
+        <textarea id="cos_write_bd" name="cos_write_bd"
+        placeholder="내용을 입력해주세요." onfocus="this.placeholder = ''" onblur="this.placeholder= '내용을 입력해주세요'"maxlength="800"></textarea>
+    </div>
+    <div>
+        <input type="file" id="cos_write_file" name="cos_write_file"><br>
+        <input type="submit" value="등록" onclick="alert('등록이 완료 되었습니다.') ">
+    </div>
+    </form>
+
+</body>
+</html>
